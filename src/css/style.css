@@ -1196,6 +1196,9 @@ input[type=range]::-ms-thumb {
   z-index: 2;
   width: 87%;
 }
+.tuning__content .heading {
+  text-align: left;
+}
 .tuning .tune {
   gap: 3rem 0;
 }
@@ -1234,6 +1237,7 @@ input[type=range]::-ms-thumb {
   display: flex;
   flex-direction: column;
   margin-right: 2rem;
+  text-align: center;
 }
 
 .text {
@@ -1281,12 +1285,15 @@ input[type=range]::-ms-thumb {
 .btn-start {
   display: flex;
   align-items: center;
+  font-family: "Russo One", sans-serif;
 }
 .btn-start .primary {
   font-size: 5rem;
+  text-transform: uppercase;
 }
 .btn-start .sub {
-  font-size: 4rem;
+  font-size: 2.6rem;
+  text-transform: uppercase;
 }
 
 .btn-img-active {

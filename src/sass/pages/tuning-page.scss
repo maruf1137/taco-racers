@@ -89,6 +89,10 @@
     left: 5.4rem;
     z-index: 2;
     width: 87%;
+
+    .heading {
+      text-align: left;
+    }
   }
 
   .tune {
@@ -130,7 +134,7 @@
   display: flex;
   flex-direction: column;
   margin-right: 2rem;
-  //   margin-top: 2rem;
+  text-align: center;
 }
 
 .text {
@@ -169,20 +173,19 @@
     object-fit: cover;
   }
 }
-.go-icon {
-  // height: 16rem;
-  // width: 8rem;
-  // transform: translateY(-15px);
-}
 
 .btn-start {
   display: flex;
   align-items: center;
+  font-family: $font-secondary;
+
   .primary {
     font-size: 5rem;
+    text-transform: uppercase;
   }
   .sub {
-    font-size: 4rem;
+    font-size: 2.6rem;
+    text-transform: uppercase;
   }
 }
 
