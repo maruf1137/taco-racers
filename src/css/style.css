@@ -1069,7 +1069,7 @@ input[type=range]::-ms-thumb {
 }
 
 .nav {
-  padding: 0 4rem !important;
+  padding: 2rem 4rem !important;
   background-image: linear-gradient(rgba(0, 0, 0, 0), black);
 }
 .nav__logo {
@@ -1123,9 +1123,14 @@ input[type=range]::-ms-thumb {
 .forecast__content {
   position: absolute;
   top: 5.3rem;
-  left: 5.4rem;
+  left: 50%;
+  transform: translateX(-50%);
   z-index: 2;
   width: 72%;
+}
+.forecast__content .heading,
+.forecast__content .text {
+  text-align: center;
 }
 .forecast .weather {
   padding-left: 2rem;
@@ -1165,6 +1170,7 @@ input[type=range]::-ms-thumb {
   font-size: 2.4rem;
   color: #fff;
   font-family: "Bebas Neue", cursive;
+  display: block;
 }
 
 .tuning {
@@ -1230,6 +1236,10 @@ input[type=range]::-ms-thumb {
   margin-right: 2rem;
 }
 
+.text {
+  color: #fff;
+}
+
 .sub {
   font-size: 2.4rem;
   color: #fff;
@@ -1268,15 +1278,15 @@ input[type=range]::-ms-thumb {
   object-fit: cover;
 }
 
-.go-icon {
-  position: absolute;
-  bottom: -2rem;
-  right: -4.5rem;
+.btn-start {
+  display: flex;
+  align-items: center;
 }
-@media only screen and (max-width: 64em) {
-  .go-icon {
-    display: none;
-  }
+.btn-start .primary {
+  font-size: 5rem;
+}
+.btn-start .sub {
+  font-size: 4rem;
 }
 
 .btn-img-active {
