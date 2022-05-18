@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>tuning page</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Luckiest+Guy&family=Rubik:ital,wght@1,900&family=Russo+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="tuning-page">
+    <main class="main">
+      <nav class="nav justify-content-between align-items-center py-2 mb-4">
+        <figure class="nav__logo">
+          <img src="img/logo.png" alt="logo" />
+        </figure>
+        <button class="bars">
+          <img src="img/bars.png" alt="bars" />
+        </button>
+      </nav>
+
+      <div class="custom-container mb-3">
+        <div class="row">
+          <div class="col-4 forecast mr-2">
+            <div class="forecast__image">
+              <img src="img/forecast-bg.png" alt="" />
+            </div>
+            <div class="forecast__content">
+              <h2 class="heading">Race forecast</h2>
+              <h4 class="heading">Weather Probability</h4>
+              <div class="weather mb-2">
+                <div
+                  class="weather__1 d-flex align-items-center justify-content-between mb-1 mt-2"
+                >
+                  <img src="img/sun.png" alt="sun" class="weather__img" />
+                  <div class="weather__Temperature">90%</div>
+                  <p class="text">sunny</p>
+                </div>
+                <div
+                  class="weather__3 d-flex align-items-center justify-content-between mb-1"
+                >
+                  <img src="img/rain.png" alt="rain" class="weather__img" />
+                  <div class="weather__Temperature">8%</div>
+                  <p class="text">rain</p>
+                </div>
+                <div
+                  class="weather__2 d-flex align-items-center justify-content-between"
+                >
+                  <img src="img/snow.png" alt="snow" class="weather__img" />
+                  <div class="weather__Temperature">2%</div>
+                  <p class="text">rain</p>
+                </div>
+              </div>
+              <p class="text">RACE ID: 1652564851</p>
+            </div>
+          </div>
+
+          <div class="col tuning">
+            <div class="tuning__image">
+              <img src="img/tuning-bg.png" alt="" />
+            </div>
+
+            <div class="tuning__content">
+              <h1 class="heading">VEHICLE Tuning</h1>
+              <h4 class="heading uppercase">fINE TUNE YOUR VEHICLE</h4>
+
+              <div class="tune row mt-1 g-5">
+                <div class="tune__item col-6 d-flex flex-column">
+                  <label for="downforce d-flex justify-content-between">
+                    <span class="text uppercase">DOWNFORCE</span>
+                    <span class="number">15</span>
+                  </label>
+                  <input type="range" value="35" min="0" max="50" />
+                </div>
+
+                <div class="tune__item col-6 d-flex flex-column">
+                  <label for="downforce d-flex justify-content-between">
+                    <span class="text uppercase">SUSPENSION</span>
+                    <span class="number">15</span>
+                  </label>
+                  <input type="range" value="35" min="0" max="50" />
+                </div>
+
+                <div class="tune__item col-6 d-flex flex-column">
+                  <label for="downforce d-flex justify-content-between">
+                    <span class="text uppercase">BREAK FORCE</span>
+                    <span class="number">15</span>
+                  </label>
+                  <input type="range" value="35" min="0" max="50" />
+                </div>
+
+                <div class="tune__item col-6 d-flex flex-column">
+                  <label for="downforce d-flex justify-content-between">
+                    <span class="text uppercase">INTERCOOLER</span>
+                    <span class="number">15</span>
+                  </label>
+                  <input type="range" value="35" min="0" max="50" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="custom-container pb-2">
+        <div class="d-flex fuel justify-content-between align-items-center">
+          <div class="d-flex align-items-center mr-4">
+            <div class="heading">
+              <span class="sub">select</span>
+              <span class="primary">fuel</span>
+            </div>
+            <button class="btn-fuel btn mr-2 active">
+              <img src="img/fuel-1.png" alt="fuel image" class="btn-img" />
+              <img
+                src="img/fuel-active-1.png"
+                alt="fuel image"
+                class="btn-img-active"
+              />
+            </button>
+            <button class="btn-fuel btn mr-2">
+              <img src="img/fuel-2.png" alt="fuel image" class="btn-img" />
+              <img
+                src="img/fuel-active-2.png"
+                alt="fuel image"
+                class="btn-img-active"
+              />
+            </button>
+            <button class="btn-fuel btn">
+              <img src="img/fuel-3.png" alt="fuel image" class="btn-img" />
+              <img
+                src="img/fuel-active-3.png"
+                alt="fuel image"
+                class="btn-img-active"
+              />
+            </button>
+          </div>
+
+          <div class="tire d-flex align-items-center position-relative">
+            <div class="heading">
+              <span class="sub">select</span>
+              <span class="primary">tires</span>
+            </div>
+            <button class="btn-tire btn mr-2">
+              <img src="img/tire-1.png" alt="tire image" class="btn-img" />
+              <img
+                src="img/tire-active-1.png"
+                alt="tire image"
+                class="btn-img-active"
+              />
+            </button>
+            <button class="btn-tire btn mr-2">
+              <img src="img/tire-2.png" alt="tire image" class="btn-img" />
+              <img
+                src="img/tire-active-2.png"
+                alt="tire image"
+                class="btn-img-active"
+              />
+            </button>
+            <button class="btn-tire btn mr-2 active">
+              <img src="img/tire-3.png" alt="tire image" class="btn-img" />
+              <img
+                src="img/tire-active-3.png"
+                alt="tire image"
+                class="btn-img-active"
+              />
+            </button>
+            <button class="btn-tire btn mr-2">
+              <img src="img/tire-4.png" alt="tire image" class="btn-img" />
+              <img
+                src="img/tire-active-4.png"
+                alt="tire image"
+                class="btn-img-active"
+              />
+            </button>
+
+            <button class="btn-start heading">
+              <span class="primary uppercase">go</span>
+              <span class="primary">race</span>
+            </button>
+
+            <img src="img/go.png" alt="" class="go-icon" />
+          </div>
+        </div>
+      </div>
+
+      <footer class="footer">
+        <div
+          class="footer__logos d-flex justify-content-between align-items-center mb-1"
+        >
+          <div class="d-flex align-items-center">
+            <img
+              src="img/bottom-logo-1.png"
+              alt=""
+              class="mr-2 footer__logo footer__logo--1"
+            />
+            <img
+              src="img/bottom-logo-2.png"
+              alt=""
+              class="mr-2 footer__logo footer__logo--"
+            />
+            <img
+              src="img/bottom-logo-3.png"
+              alt=""
+              class="footer__logo footer__logo--3"
+            />
+          </div>
+
+          <div class="d-flex">
+            <img
+              src="img/bottom-logo-4.png"
+              alt=""
+              class="mr-2 footer__logo footer__logo--4"
+            />
+            <img
+              src="img/bottom-logo-5.png"
+              alt=""
+              class="footer__logo footer__logo--5"
+            />
+          </div>
+        </div>
+
+        <div
+          class="footer__copyright d-flex justify-content-between align-items-center white"
+        >
+          <p class="text center">Copyright TacoRacers.io © 2022</p>
+          <p class="text center">Terms of Service</p>
+          <p class="text center">
+            All Rights Reserved. Parent Company Monthly Pops, LLC
+          </p>
+        </div>
+      </footer>
+    </main>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

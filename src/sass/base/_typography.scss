@@ -1,0 +1,99 @@
+h1.heading {
+  font-size: 5.2rem;
+  font-family: $font-primary;
+  font-weight: 400;
+  color: $color-primary;
+
+  // @media only screen and (max-width: $laptop-land) {
+  //   font-size: 4.5rem;
+  // }
+  // @media only screen and (max-width: $laptop-port) {
+  //   font-size: 3.8rem;
+  // }
+}
+h2.heading {
+  font-size: 4.4rem;
+  font-family: $font-primary;
+  font-weight: 600;
+  color: #00fffd;
+
+  // @media only screen and (max-width: $tab-land) {
+  //   font-size: 4.8rem;
+  //   font-weight: 700;
+  // }
+  // @media only screen and (max-width: $mbl-port) {
+  //   font-size: 3.5rem;
+  // }
+  // @media only screen and (max-width: $mbl-small) {
+  //   font-size: 3rem;
+  // }
+}
+h3.heading {
+  font-size: 3.2rem;
+  font-family: $font-secondary;
+  font-weight: 400;
+  color: $color-white;
+}
+
+h4.heading {
+  font-size: 2.4rem;
+  font-family: $font-primary;
+  font-weight: 400;
+  color: $color-white;
+}
+
+.text {
+  font-size: 1.6rem;
+  color: $color-primary;
+  font-weight: 400;
+  font-family: $font-primary;
+  text-transform: capitalize;
+  // color: $color-black;
+  // line-height: 3.4rem;
+}
+
+// Typography utils
+
+.bold {
+  font-weight: 700;
+}
+
+.center {
+  text-align: center;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+.capitalize {
+  text-transform: capitalize;
+}
+
+.white {
+  color: $color-white !important;
+}
+.black {
+  color: $color-black !important;
+}
+
+@mixin pos-center {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin img-size {
+  height: 100%;
+  width: 100%;
+}
+
+@mixin icon-vector {
+  height: 2rem;
+  width: 2rem;
+}

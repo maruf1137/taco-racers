@@ -1,0 +1,184 @@
+.forecast {
+  position: relative;
+  max-height: 55rem;
+  height: 50rem;
+
+  &__image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+
+    img {
+      @include img-size;
+    }
+  }
+  &__content {
+    position: absolute;
+    top: 5.3rem;
+    left: 5.4rem;
+    z-index: 2;
+    width: 72%;
+  }
+
+  .weather {
+    padding-left: 2rem;
+
+    &__img {
+      height: 7.2rem;
+      width: 7.2rem;
+
+      @media only screen and (max-width: $laptop-land) {
+        height: 5.2rem;
+        width: 5.2rem;
+      }
+      @media only screen and (max-width: $tab-land) {
+        height: 4.2rem;
+        width: 4.2rem;
+      }
+    }
+
+    &__Temperature {
+      font-size: 4.5rem;
+      color: $color-white;
+      font-family: $font-secondary;
+
+      @media only screen and (max-width: $laptop-land) {
+        font-size: 3.6rem;
+      }
+      @media only screen and (max-width: $tab-land) {
+        font-size: 3rem;
+      }
+    }
+  }
+  .text {
+    font-size: 2.4rem;
+    color: $color-white;
+    font-family: $font-primary;
+  }
+}
+
+.tuning {
+  position: relative;
+  max-height: 55rem;
+  height: 50rem;
+
+  &__image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+
+    img {
+      @include img-size;
+    }
+  }
+
+  &__content {
+    position: absolute;
+    top: 5.3rem;
+    left: 5.4rem;
+    z-index: 2;
+    width: 87%;
+  }
+
+  .tune {
+    gap: 3rem 0;
+    //  &__item {
+    //  }
+    label {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 1rem;
+
+      .text,
+      .number {
+        font-size: 3.2rem;
+        color: $color-white;
+        font-family: $font-secondary;
+
+        @media only screen and (max-width: $laptop-land) {
+          font-size: 3rem;
+        }
+        @media only screen and (max-width: $tab-port) {
+          font-size: 2.5rem;
+        }
+      }
+
+      .number {
+        color: #04c317;
+      }
+    }
+
+    input {
+      margin: 0 auto;
+    }
+  }
+}
+
+.heading {
+  display: flex;
+  flex-direction: column;
+  margin-right: 2rem;
+  //   margin-top: 2rem;
+}
+
+.sub {
+  font-size: 2.4rem;
+  color: $color-white;
+  line-height: 1;
+
+  @media only screen and (max-width: $laptop-land) {
+    font-size: 2rem;
+  }
+  @media only screen and (max-width: $tab-land) {
+    font-size: 1.8rem;
+  }
+}
+
+.primary {
+  font-size: 4.4rem;
+  color: $color-white;
+  line-height: 1;
+
+  @media only screen and (max-width: $laptop-land) {
+    font-size: 3.7rem;
+  }
+  @media only screen and (max-width: $tab-land) {
+    font-size: 2.8rem;
+  }
+}
+
+.btn {
+  img {
+    @include img-size;
+    object-fit: cover;
+  }
+}
+.go-icon {
+  position: absolute;
+  bottom: -2rem;
+  right: -4.5rem;
+
+  @media only screen and (max-width: $laptop-port) {
+    display: none;
+  }
+}
+
+.btn-img {
+}
+.btn-img-active {
+  display: none;
+}
+
+.active {
+  .btn-img {
+    display: none;
+  }
+  .btn-img-active {
+    display: block;
+  }
+}

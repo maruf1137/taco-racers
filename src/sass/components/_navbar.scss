@@ -1,0 +1,22 @@
+.nav {
+  padding: 0 4rem !important;
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgb(0, 0, 0));
+
+  &__logo {
+    height: auto;
+    width: 16rem;
+
+    img {
+      @include img-size;
+    }
+  }
+
+  .bars {
+    width: 4.2rem;
+    height: 2.8rem;
+
+    img {
+      @include img-size;
+    }
+  }
+}

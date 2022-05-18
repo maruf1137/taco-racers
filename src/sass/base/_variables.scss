@@ -1,0 +1,34 @@
+// ==============================
+// Colors
+// ==============================
+// $color-primary: ##00FF1B;
+$color-primary: #00ff1b;
+$color-secondary: #252537;
+$color-btn: #61d3b0;
+$color-black: #000;
+$color-white: #fff;
+
+// =============================================
+// Fonts
+// =============================================
+$font-primary: "Bebas Neue", cursive;
+$font-secondary: "Russo One", sans-serif;
+$font-tirtiary: "Rubik", sans-serif;
+$font-logo: "Luckiest Guy", cursive;
+
+// font-family: 'Bebas Neue', cursive;
+// font-family: 'Luckiest Guy', cursive;
+// font-family: 'Rubik', sans-serif;
+// font-family: 'Russo One', sans-serif;
+
+// ============================================
+// Breakpoints
+// ============================================
+
+$laptop-land: 75em; //1200px / 16px = 75em
+$laptop-port: 64em; //1024px / 16px = 64em
+$tab-land: 62em; //992px / 16px = 62em
+$tab-port: 48em; //768px / 16px = 48em
+$mbl-land: 35.9375em; //575px / 16px = 35.9375em
+$mbl-port: 30em; //480px / 16px = 30em
+$mbl-small: 23.75em; //380px / 16px = 23.75em
