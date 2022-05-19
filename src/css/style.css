@@ -1226,13 +1226,17 @@ input[type=range]::-ms-thumb {
 
 .tuning {
   position: relative;
-  max-height: 55rem;
   height: 50rem;
   padding-left: 1rem;
 }
 @media only screen and (max-width: 48em) {
   .tuning {
     padding-left: 0;
+  }
+}
+@media only screen and (max-width: 35.9375em) {
+  .tuning {
+    height: 80rem;
   }
 }
 .tuning__image {
@@ -1283,19 +1287,7 @@ input[type=range]::-ms-thumb {
 @media only screen and (max-width: 75em) {
   .tuning .tune label .text,
 .tuning .tune label .number {
-    font-size: 3rem;
-  }
-}
-@media only screen and (max-width: 48em) {
-  .tuning .tune label .text,
-.tuning .tune label .number {
-    font-size: 2.5rem;
-  }
-}
-@media only screen and (max-width: 30em) {
-  .tuning .tune label .text,
-.tuning .tune label .number {
-    font-size: 1.8rem;
+    font-size: 2.8rem;
   }
 }
 .tuning .tune label .number {

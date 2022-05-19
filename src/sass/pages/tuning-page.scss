@@ -79,18 +79,18 @@
 
 .tuning {
   position: relative;
-  max-height: 55rem;
+  // max-height: 55rem;
   height: 50rem;
   padding-left: 1rem;
 
   @media only screen and (max-width: $tab-port) {
     padding-left: 0;
   }
+  @media only screen and (max-width: $mbl-land) {
+    height: 80rem;
+  }
 
   &__image {
-    // position: absolute;
-    // top: 0;
-    // left: 0;
     height: 100%;
     width: 100%;
 
@@ -138,15 +138,15 @@
         font-family: $font-secondary;
 
         @media only screen and (max-width: $laptop-land) {
-          font-size: 3rem;
+          font-size: 2.8rem;
         }
-        @media only screen and (max-width: $tab-port) {
-          font-size: 2.5rem;
-        }
+        // @media only screen and (max-width: $tab-port) {
+        //   font-size: 2.5rem;
+        // }
 
-        @media only screen and (max-width: $mbl-port) {
-          font-size: 1.8rem;
-        }
+        // @media only screen and (max-width: $mbl-port) {
+        //   font-size: 1.8rem;
+        // }
       }
 
       .number {
