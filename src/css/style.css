@@ -1510,10 +1510,15 @@ input[type=range]::-ms-thumb {
 .race-result-page .tuning__content {
   top: 4.3rem;
   width: 91%;
+  height: calc(100% - 8.6rem);
 }
 .race-result-page .tuning__content img {
   height: 100%;
   width: 100%;
+  object-fit: cover;
+}
+.race-result-page .forecast-container .forecast {
+  height: 50rem;
 }
 .race-result-page .forecast-container h4 {
   display: flex;
