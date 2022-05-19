@@ -1266,6 +1266,7 @@ input[type=range]::-ms-thumb {
   color: #fff;
   font-family: "Bebas Neue", cursive;
   display: block;
+  text-decoration: underline;
 }
 
 .tuning {
