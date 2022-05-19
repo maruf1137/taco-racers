@@ -1,0 +1,75 @@
+.leaderboard {
+  //   width: 60rem;
+  //   margin: 0 auto;
+  color: #fff;
+
+  h1 {
+    font-size: 8rem;
+    color: $color-white;
+    margin-bottom: 2rem;
+  }
+
+  .head {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0.5rem 2rem;
+    justify-items: start;
+
+    h5 {
+      font-size: 2.8rem;
+      margin-left: 5rem;
+
+      @media only screen and (max-width: $tab-port) {
+        font-size: 2.5rem;
+      }
+      @media only screen and (max-width: $mbl-land) {
+        font-size: 2.2rem;
+      }
+      @media only screen and (max-width: $mbl-port) {
+        font-size: 2rem;
+      }
+    }
+  }
+
+  .list {
+    gap: 1rem;
+  }
+  .item {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0.5rem 2rem;
+    justify-items: start;
+    background-color: black;
+
+    span {
+      font-size: 4.5rem;
+
+      @media only screen and (max-width: $tab-port) {
+        font-size: 4rem;
+      }
+      @media only screen and (max-width: $mbl-land) {
+        font-size: 3.2rem;
+      }
+
+      @media only screen and (max-width: $mbl-port) {
+        font-size: 2.8rem;
+      }
+      @media only screen and (max-width: $mbl-small) {
+        font-size: 2.4rem;
+      }
+    }
+  }
+
+  img {
+    height: 5rem;
+    margin-right: 4rem;
+
+    @media only screen and (max-width: $mbl-land) {
+      margin-right: 2rem;
+    }
+
+    // @media only screen and (max-width: $mbl-port) {
+    //   font-size: 2.8rem;
+    // }
+  }
+}

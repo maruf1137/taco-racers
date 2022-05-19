@@ -499,6 +499,46 @@ a:hover {
   margin-right: 10rem !important;
 }
 
+.ml-1 {
+  margin-left: 1rem !important;
+}
+
+.ml-2 {
+  margin-left: 2rem !important;
+}
+
+.ml-3 {
+  margin-left: 3rem !important;
+}
+
+.ml-4 {
+  margin-left: 4rem !important;
+}
+
+.ml-5 {
+  margin-left: 5rem !important;
+}
+
+.ml-6 {
+  margin-left: 6rem !important;
+}
+
+.ml-7 {
+  margin-left: 7rem !important;
+}
+
+.ml-8 {
+  margin-left: 8rem !important;
+}
+
+.ml-9 {
+  margin-left: 9rem !important;
+}
+
+.ml-10 {
+  margin-left: 10rem !important;
+}
+
 .p-1 {
   padding: 1rem !important;
 }
@@ -1115,7 +1155,7 @@ input[type=range]::-ms-thumb {
 }
 
 .footer {
-  padding: 1.2rem 4rem;
+  padding: 4rem 2rem 1.2rem 2rem;
 }
 @media only screen and (max-width: 35.9375em) {
   .footer {
@@ -1143,6 +1183,10 @@ input[type=range]::-ms-thumb {
   .footer .text {
     text-align: left;
   }
+}
+.footer .tarms {
+  color: #fff;
+  text-decoration: underline;
 }
 
 .forecast {
@@ -1384,6 +1428,82 @@ input[type=range]::-ms-thumb {
 }
 .active .btn-img-active {
   display: block;
+}
+
+.leaderboard {
+  color: #fff;
+}
+.leaderboard h1 {
+  font-size: 8rem;
+  color: #fff;
+  margin-bottom: 2rem;
+}
+.leaderboard .head {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 0.5rem 2rem;
+  justify-items: start;
+}
+.leaderboard .head h5 {
+  font-size: 2.8rem;
+  margin-left: 5rem;
+}
+@media only screen and (max-width: 48em) {
+  .leaderboard .head h5 {
+    font-size: 2.5rem;
+  }
+}
+@media only screen and (max-width: 35.9375em) {
+  .leaderboard .head h5 {
+    font-size: 2.2rem;
+  }
+}
+@media only screen and (max-width: 30em) {
+  .leaderboard .head h5 {
+    font-size: 2rem;
+  }
+}
+.leaderboard .list {
+  gap: 1rem;
+}
+.leaderboard .item {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 0.5rem 2rem;
+  justify-items: start;
+  background-color: black;
+}
+.leaderboard .item span {
+  font-size: 4.5rem;
+}
+@media only screen and (max-width: 48em) {
+  .leaderboard .item span {
+    font-size: 4rem;
+  }
+}
+@media only screen and (max-width: 35.9375em) {
+  .leaderboard .item span {
+    font-size: 3.2rem;
+  }
+}
+@media only screen and (max-width: 30em) {
+  .leaderboard .item span {
+    font-size: 2.8rem;
+  }
+}
+@media only screen and (max-width: 23.75em) {
+  .leaderboard .item span {
+    font-size: 2.4rem;
+  }
+}
+.leaderboard img {
+  height: 5rem;
+  margin-right: 4rem;
+}
+@media only screen and (max-width: 35.9375em) {
+  .leaderboard img {
+    margin-right: 2rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
