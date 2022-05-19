@@ -2,11 +2,18 @@
   position: relative;
   max-height: 55rem;
   height: 50rem;
+  padding-right: 1rem;
+
+  @media only screen and (max-width: $tab-port) {
+    padding-right: 0;
+    height: 42rem;
+    margin-bottom: 4rem;
+  }
 
   &__image {
-    position: absolute;
-    top: 0;
-    left: 0;
+    // position: absolute;
+    // top: 0;
+    // left: 0;
     height: 100%;
     width: 100%;
 
@@ -30,6 +37,10 @@
 
   .weather {
     padding-left: 2rem;
+
+    @media only screen and (max-width: $tab-port) {
+      padding-left: 0;
+    }
 
     &__img {
       height: 7.2rem;
@@ -70,11 +81,16 @@
   position: relative;
   max-height: 55rem;
   height: 50rem;
+  padding-left: 1rem;
+
+  @media only screen and (max-width: $tab-port) {
+    padding-left: 0;
+  }
 
   &__image {
-    position: absolute;
-    top: 0;
-    left: 0;
+    // position: absolute;
+    // top: 0;
+    // left: 0;
     height: 100%;
     width: 100%;
 
@@ -86,12 +102,17 @@
   &__content {
     position: absolute;
     top: 5.3rem;
-    left: 5.4rem;
+    left: 50%;
+    transform: translateX(-50%);
     z-index: 2;
     width: 87%;
 
     .heading {
       text-align: left;
+
+      @media only screen and (max-width: $tab-port) {
+        text-align: center;
+      }
     }
   }
 
@@ -105,6 +126,11 @@
       align-items: center;
       margin-bottom: 1rem;
 
+      @media only screen and (max-width: $tab-port) {
+        justify-content: center;
+        gap: 0 2rem;
+      }
+
       .text,
       .number {
         font-size: 3.2rem;
@@ -117,6 +143,10 @@
         @media only screen and (max-width: $tab-port) {
           font-size: 2.5rem;
         }
+
+        @media only screen and (max-width: $mbl-port) {
+          font-size: 1.8rem;
+        }
       }
 
       .number {
@@ -128,6 +158,31 @@
       margin: 0 auto;
     }
   }
+}
+
+.tuning-event {
+  @media only screen and (max-width: $laptop-land) {
+    flex-direction: column;
+    gap: 4rem;
+    align-items: flex-start !important;
+  }
+
+  img {
+    height: 8rem;
+    width: 8rem;
+  }
+}
+
+// .fuel {
+//   img {
+//     height: 8rem;
+//     width: 8rem;
+//   }
+// }
+
+.tire {
+  gap: 2rem;
+  // width: 100%;
 }
 
 .heading {
@@ -167,17 +222,18 @@
   }
 }
 
-.btn {
-  img {
-    @include img-size;
-    object-fit: cover;
-  }
-}
+// .btn {
+//   img {
+//     @include img-size;
+//     object-fit: cover;
+//   }
+// }
 
 .btn-start {
   display: flex;
   align-items: center;
   font-family: $font-secondary;
+  align-self: center;
 
   .primary {
     font-size: 5rem;
@@ -186,6 +242,11 @@
   .sub {
     font-size: 2.6rem;
     text-transform: uppercase;
+  }
+
+  img {
+    height: 7rem;
+    width: 8rem;
   }
 }
 

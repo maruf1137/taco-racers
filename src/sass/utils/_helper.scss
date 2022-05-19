@@ -45,7 +45,7 @@
   display: none !important;
 
   @media only screen and (max-width: $tab-port) {
-    display: block !important;
+    display: flex !important;
   }
 }
 
@@ -65,6 +65,19 @@
 
   @media only screen and (max-width: $mbl-land) {
     display: block;
+  }
+}
+
+.mbl-port-hide {
+  @media only screen and (max-width: $mbl-port) {
+    display: none !important;
+  }
+}
+.mbl-port-show {
+  display: none !important;
+
+  @media only screen and (max-width: $mbl-port) {
+    display: flex !important;
   }
 }
 

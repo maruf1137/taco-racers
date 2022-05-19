@@ -31,8 +31,8 @@
       </nav>
 
       <div class="custom-container mb-3">
-        <div class="row">
-          <div class="col-4 forecast mr-2">
+        <div class="row forecast-container">
+          <div class="col-12 col-md-4 forecast">
             <div class="forecast__image">
               <img src="img/forecast-bg.png" alt="" />
             </div>
@@ -67,7 +67,7 @@
             </div>
           </div>
 
-          <div class="col tuning">
+          <div class="col-12 col-md-8 tuning">
             <div class="tuning__image">
               <img src="img/tuning-bg.png" alt="" />
             </div>
@@ -115,7 +115,9 @@
       </div>
 
       <div class="custom-container pb-2">
-        <div class="d-flex justify-content-between align-items-center">
+        <div
+          class="d-flex justify-content-between align-items-center tuning-event"
+        >
           <div class="d-flex align-items-center mr-4 fuel">
             <div class="heading">
               <span class="sub">select</span>
@@ -150,7 +152,9 @@
             </button>
           </div>
 
-          <div class="tire d-flex align-items-center position-relative">
+          <div
+            class="tire d-flex align-items-center position-relative tablet-port-hide"
+          >
             <div class="heading">
               <span class="sub">select</span>
               <span class="primary">tires</span>
@@ -193,7 +197,135 @@
             </button>
 
             <button class="btn-start">
-              <div class="mr-1">
+              <div class="mr-1 d-flex flex-column">
+                <span class="primary">go</span>
+                <span class="sub">race</span>
+              </div>
+              <img src="img/go.png" alt="" class="go-icon" />
+            </button>
+          </div>
+
+          <div class="tire tablet-port-show mbl-port-hide d-flex flex-column">
+            <div class="d-flex align-items-center position-relative">
+              <div class="heading">
+                <span class="sub">select</span>
+                <span class="primary">tires</span>
+              </div>
+              <button class="btn-tire btn mr-2">
+                <div class="text mb-1">STANDARD</div>
+                <img src="img/tire-1.png" alt="tire image" class="btn-img" />
+                <img
+                  src="img/tire-active-1.png"
+                  alt="tire image"
+                  class="btn-img-active btn-img"
+                />
+              </button>
+              <button class="btn-tire btn mr-2">
+                <div class="text mb-1">racung</div>
+                <img src="img/tire-2.png" alt="tire image" class="btn-img" />
+                <img
+                  src="img/tire-active-2.png"
+                  alt="tire image"
+                  class="btn-img-active btn-img"
+                />
+              </button>
+              <button class="btn-tire btn mr-2 active">
+                <div class="text mb-1">rain</div>
+                <img src="img/tire-3.png" alt="tire image" class="btn-img" />
+                <img
+                  src="img/tire-active-3.png"
+                  alt="tire image"
+                  class="btn-img-active btn-img"
+                />
+              </button>
+              <button class="btn-tire btn mr-2">
+                <div class="text mb-1">snow</div>
+                <img src="img/tire-4.png" alt="tire image" class="btn-img" />
+                <img
+                  src="img/tire-active-4.png"
+                  alt="tire image"
+                  class="btn-img-active btn-img"
+                />
+              </button>
+            </div>
+
+            <button class="btn-start">
+              <div class="mr-2 d-flex flex-column">
+                <span class="primary">go</span>
+                <span class="sub">race</span>
+              </div>
+              <img src="img/go.png" alt="" class="go-icon" />
+            </button>
+          </div>
+
+          <div class="tire mbl-port-show d-flex flex-column">
+            <div class="d-flex align-items-start position-relative">
+              <div class="heading mt-4">
+                <span class="sub">select</span>
+                <span class="primary">tires</span>
+              </div>
+              <div class="d-flex align-items-center flex-column">
+                <div>
+                  <button class="btn-tire btn mr-2">
+                    <div class="text mb-1">STANDARD</div>
+                    <img
+                      src="img/tire-1.png"
+                      alt="tire image"
+                      class="btn-img"
+                    />
+                    <img
+                      src="img/tire-active-1.png"
+                      alt="tire image"
+                      class="btn-img-active btn-img"
+                    />
+                  </button>
+                  <button class="btn-tire btn mr-2">
+                    <div class="text mb-1">racung</div>
+                    <img
+                      src="img/tire-2.png"
+                      alt="tire image"
+                      class="btn-img"
+                    />
+                    <img
+                      src="img/tire-active-2.png"
+                      alt="tire image"
+                      class="btn-img-active btn-img"
+                    />
+                  </button>
+                </div>
+                <div>
+                  <button class="btn-tire btn mr-2 active">
+                    <div class="text mb-1">rain</div>
+                    <img
+                      src="img/tire-3.png"
+                      alt="tire image"
+                      class="btn-img"
+                    />
+                    <img
+                      src="img/tire-active-3.png"
+                      alt="tire image"
+                      class="btn-img-active btn-img"
+                    />
+                  </button>
+                  <button class="btn-tire btn mr-2">
+                    <div class="text mb-1">snow</div>
+                    <img
+                      src="img/tire-4.png"
+                      alt="tire image"
+                      class="btn-img"
+                    />
+                    <img
+                      src="img/tire-active-4.png"
+                      alt="tire image"
+                      class="btn-img-active btn-img"
+                    />
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <button class="btn-start">
+              <div class="mr-2 d-flex flex-column">
                 <span class="primary">go</span>
                 <span class="sub">race</span>
               </div>
@@ -205,7 +337,7 @@
 
       <footer class="footer">
         <div
-          class="footer__logos d-flex justify-content-between align-items-center mb-1"
+          class="d-flex justify-content-between align-items-center mb-1 footer__logos"
         >
           <div class="d-flex align-items-center">
             <img
@@ -242,10 +374,15 @@
         <div
           class="footer__copyright d-flex justify-content-between align-items-center white"
         >
-          <p class="text center">Copyright TacoRacers.io © 2022</p>
-          <p class="text center">Terms of Service</p>
-          <p class="text center">
+          <p class="text center mbl-land-hide">
+            Copyright TacoRacers.io © 2022
+          </p>
+          <p class="text center mbl-land-hide">Terms of Service</p>
+          <p class="text center mbl-land-hide">
             All Rights Reserved. Parent Company Monthly Pops, LLC
+          </p>
+          <p class="text center mbl-land-show">
+            Copyright TacoRacers.io © 2022 Parent Company Monthly Pops, LLC
           </p>
         </div>
       </footer>

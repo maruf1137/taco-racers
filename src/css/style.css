@@ -25,6 +25,11 @@ html {
     font-size: 50%;
   }
 }
+@media only screen and (max-width: 30em) {
+  html {
+    font-size: 45%;
+  }
+}
 
 body {
   font-family: "Bebas Neue", cursive;
@@ -50,7 +55,12 @@ body {
 }
 @media only screen and (max-width: 75em) {
   .custom-container {
-    padding: 0 2rem;
+    padding: 0 5rem;
+  }
+}
+@media only screen and (max-width: 30em) {
+  .custom-container {
+    padding: 0 3rem;
   }
 }
 
@@ -296,7 +306,7 @@ a:hover {
 }
 @media only screen and (max-width: 48em) {
   .tablet-port-show {
-    display: block !important;
+    display: flex !important;
   }
 }
 
@@ -318,6 +328,21 @@ a:hover {
 @media only screen and (max-width: 35.9375em) {
   .mbl-land-show {
     display: block;
+  }
+}
+
+@media only screen and (max-width: 30em) {
+  .mbl-port-hide {
+    display: none !important;
+  }
+}
+
+.mbl-port-show {
+  display: none !important;
+}
+@media only screen and (max-width: 30em) {
+  .mbl-port-show {
+    display: flex !important;
   }
 }
 
@@ -1092,6 +1117,17 @@ input[type=range]::-ms-thumb {
 .footer {
   padding: 1.2rem 4rem;
 }
+@media only screen and (max-width: 35.9375em) {
+  .footer {
+    padding: 1.2rem 2rem;
+  }
+}
+@media only screen and (max-width: 35.9375em) {
+  .footer__logos {
+    justify-content: left !important;
+    gap: 2rem;
+  }
+}
 .footer__logo {
   height: 3.8rem;
   width: 3.8rem;
@@ -1103,16 +1139,26 @@ input[type=range]::-ms-thumb {
 .footer .text {
   color: #fff;
 }
+@media only screen and (max-width: 35.9375em) {
+  .footer .text {
+    text-align: left;
+  }
+}
 
 .forecast {
   position: relative;
   max-height: 55rem;
   height: 50rem;
+  padding-right: 1rem;
+}
+@media only screen and (max-width: 48em) {
+  .forecast {
+    padding-right: 0;
+    height: 42rem;
+    margin-bottom: 4rem;
+  }
 }
 .forecast__image {
-  position: absolute;
-  top: 0;
-  left: 0;
   height: 100%;
   width: 100%;
 }
@@ -1134,6 +1180,11 @@ input[type=range]::-ms-thumb {
 }
 .forecast .weather {
   padding-left: 2rem;
+}
+@media only screen and (max-width: 48em) {
+  .forecast .weather {
+    padding-left: 0;
+  }
 }
 .forecast .weather__img {
   height: 7.2rem;
@@ -1177,11 +1228,14 @@ input[type=range]::-ms-thumb {
   position: relative;
   max-height: 55rem;
   height: 50rem;
+  padding-left: 1rem;
+}
+@media only screen and (max-width: 48em) {
+  .tuning {
+    padding-left: 0;
+  }
 }
 .tuning__image {
-  position: absolute;
-  top: 0;
-  left: 0;
   height: 100%;
   width: 100%;
 }
@@ -1192,12 +1246,18 @@ input[type=range]::-ms-thumb {
 .tuning__content {
   position: absolute;
   top: 5.3rem;
-  left: 5.4rem;
+  left: 50%;
+  transform: translateX(-50%);
   z-index: 2;
   width: 87%;
 }
 .tuning__content .heading {
   text-align: left;
+}
+@media only screen and (max-width: 48em) {
+  .tuning__content .heading {
+    text-align: center;
+  }
 }
 .tuning .tune {
   gap: 3rem 0;
@@ -1207,6 +1267,12 @@ input[type=range]::-ms-thumb {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 1rem;
+}
+@media only screen and (max-width: 48em) {
+  .tuning .tune label {
+    justify-content: center;
+    gap: 0 2rem;
+  }
 }
 .tuning .tune label .text,
 .tuning .tune label .number {
@@ -1226,11 +1292,33 @@ input[type=range]::-ms-thumb {
     font-size: 2.5rem;
   }
 }
+@media only screen and (max-width: 30em) {
+  .tuning .tune label .text,
+.tuning .tune label .number {
+    font-size: 1.8rem;
+  }
+}
 .tuning .tune label .number {
   color: #04c317;
 }
 .tuning .tune input {
   margin: 0 auto;
+}
+
+@media only screen and (max-width: 75em) {
+  .tuning-event {
+    flex-direction: column;
+    gap: 4rem;
+    align-items: flex-start !important;
+  }
+}
+.tuning-event img {
+  height: 8rem;
+  width: 8rem;
+}
+
+.tire {
+  gap: 2rem;
 }
 
 .heading {
@@ -1276,16 +1364,11 @@ input[type=range]::-ms-thumb {
   }
 }
 
-.btn img {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-}
-
 .btn-start {
   display: flex;
   align-items: center;
   font-family: "Russo One", sans-serif;
+  align-self: center;
 }
 .btn-start .primary {
   font-size: 5rem;
@@ -1294,6 +1377,10 @@ input[type=range]::-ms-thumb {
 .btn-start .sub {
   font-size: 2.6rem;
   text-transform: uppercase;
+}
+.btn-start img {
+  height: 7rem;
+  width: 8rem;
 }
 
 .btn-img-active {
