@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>result page</title>
+    <title>race queue</title>
 
     <link
       href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Luckiest+Guy&family=Rubik:ital,wght@1,900&family=Russo+One&display=swap"
@@ -19,7 +19,7 @@
 
     <link rel="stylesheet" href="css/style.css" />
   </head>
-  <body class="race-result-page">
+  <body class="queue-page">
     <main class="main">
       <nav class="nav justify-content-between align-items-center py-2 mb-4">
         <figure class="nav__logo">
@@ -34,67 +34,66 @@
 
       <div class="custom-container mb-3">
         <div class="row forecast-container">
-          <div class="col-12 col-md-4 forecast">
-            <div class="forecast__image">
-              <img src="img/forecast-bg.png" alt="" />
-            </div>
-            <div class="forecast__content">
-              <h2 class="heading">Race result</h2>
-              <h4 class="heading">
-                <span> Weather:</span>
-                <span class="big-font">sunny</span>
-              </h4>
-              <div class="result">
-                <ul class="result__list">
-                  <li class="result__head">
-                    <h4 class="heading">position</h4>
-                    <h4 class="heading">wallet</h4>
-                  </li>
-
-                  <li class="result__item">
-                    <h4 class="heading position">1st</h4>
-                    <h4 class="heading">playquestonmax</h4>
-                  </li>
-                  <li class="result__item">
-                    <h4 class="heading position">2nd</h4>
-                    <h4 class="heading">thegodfather</h4>
-                  </li>
-                  <li class="result__item">
-                    <h4 class="heading position">3rd</h4>
-                    <h4 class="heading">mirage</h4>
-                  </li>
-                  <li class="result__item">
-                    <h4 class="heading position">4th</h4>
-                    <h4 class="heading">cozy</h4>
-                  </li>
-                  <li class="result__item">
-                    <h4 class="heading position">5th</h4>
-                    <h4 class="heading">jaycrestive</h4>
-                  </li>
-                </ul>
-              </div>
-              <!-- <p class="text">RACE ID: 1652564851</p> -->
-              <a href="#" class="text">RACE ID: 1652564851</a>
-            </div>
-          </div>
-
-          <div class="col-12 col-md-8 tuning">
+          <div class="col-12 tuning">
             <div class="tuning__image">
               <img src="img/tuning-bg.png" alt="" />
             </div>
 
             <div class="tuning__content">
-              <img src="img/race-car.jpg" alt="car" />
+              <div class="tuning__head mb-4">
+                <h1 class="heading">Race QUEUE</h1>
+                <a href="#" class="tuning__link">RACE ID: 321324532</a>
+              </div>
+              <ul class="tuning__list">
+                <input
+                  type="range"
+                  name=""
+                  class="tuning__slider"
+                  value="75"
+                  min="0"
+                  max="100"
+                />
+                <li class="tuning__item">
+                  <p class="text">wallet</p>
+                  <p class="text">vehicle</p>
+                  <p class="text">status</p>
+                  <p class="text">last update</p>
+                </li>
+                <li class="tuning__item">
+                  <p class="text">miragetrtest</p>
+                  <p class="text">1099531367743</p>
+                  <p class="text">Ready for race</p>
+                  <p class="text">4 minutes 22 seconds ago</p>
+                </li>
+                <li class="tuning__item">
+                  <p class="text">guffathrtacia</p>
+                  <p class="text">1099531396471</p>
+                  <p class="text">Ready for race</p>
+                  <p class="text">4 minutes 45 seconds ago</p>
+                </li>
+                <li class="tuning__item">
+                  <p class="text">miragetest13</p>
+                  <p class="text">1099531396489</p>
+                  <p class="text">Ready for race</p>
+                  <p class="text">57 seconds ago</p>
+                </li>
+                <li class="tuning__item">
+                  <p class="text">jaycreative1</p>
+                  <p class="text">1099531398473</p>
+                  <p class="text">Tuning the vehicle</p>
+                  <p class="text">37 seconds ago</p>
+                </li>
+                <li class="tuning__item d-block center">
+                  <p class="text center">waiting for race...</p>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
       </div>
 
-      <div class="custom-container">
-        <button class="btn-again">
-          <span>race again</span>
-          <img src="img/load.png" alt="load" />
-        </button>
+      <div class="custom-container center">
+        <button class="btn-view-race">view race</button>
       </div>
 
       <footer class="footer">

@@ -1,0 +1,64 @@
+.queue-page {
+  .btn-view-race {
+    margin: 5rem auto 0 auto;
+    background: black;
+    padding: 0 4rem;
+    font-size: 4.5rem;
+    color: $color-white;
+  }
+
+  .tuning {
+    height: 55rem;
+
+    @media only screen and (max-width: $tab-land) {
+      height: 60rem;
+    }
+    @media only screen and (max-width: $mbl-land) {
+      height: 65rem;
+    }
+    @media only screen and (max-width: $mbl-small) {
+      height: 70rem;
+    }
+
+    &__head {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &__link {
+      font-size: 2.5rem;
+      color: $color-white;
+      text-decoration: underline;
+    }
+
+    &__list {
+      // display: flex;
+      // flex-direction: column;
+      // gap: ;
+    }
+
+    &__item {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1rem;
+      justify-content: start;
+      align-items: center;
+      padding: 1rem;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.678);
+
+      .text {
+        font-family: sans-serif;
+        letter-spacing: 1px;
+        font-size: 1.6rem;
+
+        @media only screen and (max-width: $mbl-land) {
+          font-size: 1.4rem;
+        }
+        @media only screen and (max-width: $mbl-small) {
+          font-size: 1.2rem;
+        }
+      }
+    }
+  }
+}

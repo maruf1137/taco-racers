@@ -43,3 +43,30 @@ input[type="range"]::-ms-thumb {
   cursor: pointer;
   box-shadow: 0 0 2px 0 #555;
 }
+
+.queue-page {
+  /* Input Thumb */
+  input[type="range"] {
+    -webkit-appearance: none;
+    margin-right: 15px;
+    width: 100%;
+    height: 25px;
+    background: $color-white;
+    border-radius: 6px;
+    background-image: linear-gradient(#00ff1b, #00ff1b);
+    background-size: 70% 100%;
+    background-repeat: no-repeat;
+  }
+
+  input[type="range"]::-webkit-slider-thumb {
+    display: none;
+  }
+
+  input[type="range"]::-moz-range-thumb {
+    display: none;
+  }
+
+  input[type="range"]::-ms-thumb {
+    display: none;
+  }
+}

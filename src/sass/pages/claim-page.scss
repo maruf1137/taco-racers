@@ -1,0 +1,59 @@
+.claim-page {
+  .tuning__content {
+    text-align: center;
+    height: calc(100% - 11rem);
+
+    h1 {
+      font-size: 12rem;
+      line-height: 1;
+
+      @media only screen and (max-width: $mbl-land) {
+        font-size: 10rem;
+      }
+      @media only screen and (max-width: $mbl-small) {
+        font-size: 7rem;
+      }
+    }
+    h4 {
+      font-size: 3.6rem;
+      line-height: 1;
+
+      @media only screen and (max-width: $mbl-small) {
+        font-size: 3rem;
+      }
+    }
+
+    .heading,
+    .btn-claim {
+      text-align: center;
+    }
+
+    .btn-claim {
+      background-color: $color-black;
+      padding: 0rem 3.4rem;
+      color: $color-white;
+      font-size: 3.6rem;
+
+      @media only screen and (max-width: $mbl-small) {
+        font-size: 3rem;
+      }
+    }
+
+    img {
+      @include img-size;
+      transform: scale(1.2) translateY(-1.5rem);
+    }
+  }
+
+  .tuning {
+    &__img {
+      @media only screen and (max-width: $tab-port) {
+        display: none;
+      }
+    }
+
+    &__item {
+      height: 100%;
+    }
+  }
+}

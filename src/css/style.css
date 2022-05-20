@@ -1133,6 +1133,30 @@ input[type=range]::-ms-thumb {
   box-shadow: 0 0 2px 0 #555;
 }
 
+.queue-page {
+  /* Input Thumb */
+}
+.queue-page input[type=range] {
+  -webkit-appearance: none;
+  margin-right: 15px;
+  width: 100%;
+  height: 25px;
+  background: #fff;
+  border-radius: 6px;
+  background-image: linear-gradient(#00ff1b, #00ff1b);
+  background-size: 70% 100%;
+  background-repeat: no-repeat;
+}
+.queue-page input[type=range]::-webkit-slider-thumb {
+  display: none;
+}
+.queue-page input[type=range]::-moz-range-thumb {
+  display: none;
+}
+.queue-page input[type=range]::-ms-thumb {
+  display: none;
+}
+
 .nav {
   padding: 2rem 4rem !important;
   background-image: linear-gradient(rgba(0, 0, 0, 0), black);
@@ -1583,6 +1607,122 @@ input[type=range]::-ms-thumb {
 }
 .race-result-page .result__item .heading {
   margin-right: 0;
+}
+
+.claim-page .tuning__content {
+  text-align: center;
+  height: calc(100% - 11rem);
+}
+.claim-page .tuning__content h1 {
+  font-size: 12rem;
+  line-height: 1;
+}
+@media only screen and (max-width: 35.9375em) {
+  .claim-page .tuning__content h1 {
+    font-size: 10rem;
+  }
+}
+@media only screen and (max-width: 23.75em) {
+  .claim-page .tuning__content h1 {
+    font-size: 7rem;
+  }
+}
+.claim-page .tuning__content h4 {
+  font-size: 3.6rem;
+  line-height: 1;
+}
+@media only screen and (max-width: 23.75em) {
+  .claim-page .tuning__content h4 {
+    font-size: 3rem;
+  }
+}
+.claim-page .tuning__content .heading,
+.claim-page .tuning__content .btn-claim {
+  text-align: center;
+}
+.claim-page .tuning__content .btn-claim {
+  background-color: #000;
+  padding: 0rem 3.4rem;
+  color: #fff;
+  font-size: 3.6rem;
+}
+@media only screen and (max-width: 23.75em) {
+  .claim-page .tuning__content .btn-claim {
+    font-size: 3rem;
+  }
+}
+.claim-page .tuning__content img {
+  height: 100%;
+  width: 100%;
+  transform: scale(1.2) translateY(-1.5rem);
+}
+@media only screen and (max-width: 48em) {
+  .claim-page .tuning__img {
+    display: none;
+  }
+}
+.claim-page .tuning__item {
+  height: 100%;
+}
+
+.queue-page .btn-view-race {
+  margin: 5rem auto 0 auto;
+  background: black;
+  padding: 0 4rem;
+  font-size: 4.5rem;
+  color: #fff;
+}
+.queue-page .tuning {
+  height: 55rem;
+}
+@media only screen and (max-width: 62em) {
+  .queue-page .tuning {
+    height: 60rem;
+  }
+}
+@media only screen and (max-width: 35.9375em) {
+  .queue-page .tuning {
+    height: 65rem;
+  }
+}
+@media only screen and (max-width: 23.75em) {
+  .queue-page .tuning {
+    height: 70rem;
+  }
+}
+.queue-page .tuning__head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.queue-page .tuning__link {
+  font-size: 2.5rem;
+  color: #fff;
+  text-decoration: underline;
+}
+.queue-page .tuning__item {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  justify-content: start;
+  align-items: center;
+  padding: 1rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.678);
+}
+.queue-page .tuning__item .text {
+  font-family: sans-serif;
+  letter-spacing: 1px;
+  font-size: 1.6rem;
+}
+@media only screen and (max-width: 35.9375em) {
+  .queue-page .tuning__item .text {
+    font-size: 1.4rem;
+  }
+}
+@media only screen and (max-width: 23.75em) {
+  .queue-page .tuning__item .text {
+    font-size: 1.2rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
